@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Регистрация</h1>
+
+    <form id="registrationForm">
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+        <i id="togglePassword" class="fa fa-eye"></i>
+
+        <label for="confirmPassword">Подтвердите пароль:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Согласен с условиями</label>
+
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+
+    <div id="successMessage" class="success"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
